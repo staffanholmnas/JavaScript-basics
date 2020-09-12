@@ -1,3 +1,20 @@
+// Type "node <file location> to run or ctrl + alt +n with code runner."
+
+console.log("Hello World!"); // Prints Hello World! to the console.
+
+// A simple if-statement
+var x = 4;
+if (x < 5) {
+    x = 23;
+}
+console.log(x);
+
+// Equal
+
+let y = 4;
+console.log(y === 3); // false
+console.log(y !== 3); // true
+
 // Difference between var and let
 
 function varTest() {
@@ -34,6 +51,18 @@ console.log(z) // Output: 5
 console.log(".....................");
 
 // Arrays
+
+// Simple arrays
+let nameArray = ["bob", "eve", "jim", 4];
+let name;
+name = nameArray[1];
+
+let numberArray = [2, 3, 44, "six", 4];
+let number = numberArray[3];
+
+console.log(name + " " + number);
+
+console.log(".....................");
 
 const t = [1, -1, 3]
 
@@ -102,49 +131,3 @@ function Destr3() { // Rest...
     console.log(rest)          // [3, 4 ,5] 
 }
 Destr3();
-
-// Objects
-
-let petObject = { name: "molly", age: 3, color: "black" }
-const fieldName = "color";
-console.log(petObject.name + " " + petObject.age + " " + petObject[fieldName])
-petObject.location = "Finland"
-petObject["type of animal"] = "Cat" // If whitespaces or special characters, use []
-console.log(petObject.location)
-console.log(petObject["type of animal"])
-
-// Functions
-
-const sum = (p1, p2) => {
-    console.log(p1 + " + " + p2 + " = ")
-    return p1 + p2
-}
-const result = sum(1, 5)
-console.log(result)
-
-const square = p => { // If just a single parameter, then () is not needed
-    console.log(p)
-    return p * p
-  }
-
-const square2 = p => p * p // If only 1 expression, then the {} are not needed
-
-console.log(square(2))
-console.log(square2(4))
-
-const w = [1, 2, 3]
-const wSquared = t.map(p => p * p) // [1, 4, 9]
-console.log(wSquared)
-
-function product(a, b) { // Old-school
-    return a * b
-  }
-  
-  const multiplication = product(2, 6) // 12
-  console.log(multiplication)
-
-  const average = function(a, b) {
-    return (a + b) / 2
-  }
-  const averageResult = average(3, 4)
-  console.log(averageResult)
