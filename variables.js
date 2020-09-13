@@ -131,3 +131,29 @@ function Destr3() { // Rest...
     console.log(rest)          // [3, 4 ,5] 
 }
 Destr3();
+
+console.log(".....................");
+
+// Numbers
+
+let r = 4
+let circumference = 2 * Math.PI * r;
+console.log(circumference)
+
+let stringToNumber = parseInt('1234', 10); // 1234
+let stringToBinary = parseInt('1011', 2); // 3 (binary)
+
+console.log(stringToNumber)
+console.log(stringToBinary)
+
+// Strings
+
+console.log("hello".length) // 5 
+console.log('hello'.charAt(1)) // "e"
+console.log('hello, world'.replace('world', 'Steve')) // "hello, Steve"
+console.log('hello'.toUpperCase()) // "HELLO"
+console.log("3" + 5 + 4) // "354"
+console.log('hello' + ' world') // "hello world")
+console.log(123 == '123') // true
+console.log(1 == true) // true
+console.log(123 === '123') // false
